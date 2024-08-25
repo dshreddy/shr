@@ -1,0 +1,11 @@
+.learn .card {
+  border-radius: 0.5rem; /* Rounded corners for the card */
+}
+
+.learn .card-body {
+  padding: 2rem; /* Adjust padding inside the card */
+}
+
+.learn .btn-secondary {
+  margin-top: 1rem; /* Add margin-top to the button */
+}

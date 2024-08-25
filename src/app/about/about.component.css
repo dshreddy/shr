@@ -1,0 +1,13 @@
+.about-me {
+  padding: 0; /* Remove default padding */
+}
+
+.about-me .lead {
+  font-size: 1.25rem; /* Adjust font size */
+}
+
+@media (max-width: 767.98px) {
+  .about-me h2 {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+}
