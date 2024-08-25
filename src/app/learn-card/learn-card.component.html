@@ -1,7 +1,8 @@
 <div class="card">
-  <div class="card-body">
+  <img [src]="topic.image" alt="{{ topic.title }}" class="card-img-top" />
+  <div class="card-body d-flex flex-column align-items-center">
     <h3 class="card-title">{{ topic.title }}</h3>
     <p class="card-text">{{ topic.description }}</p>
-    <a href="" class="btn btn-secondary">More</a>
+    <a href="" class="btn btn-secondary">Learn More</a>
   </div>
 </div>

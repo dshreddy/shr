@@ -1,10 +1,10 @@
 <section class="learn py-5">
   <div class="container">
-    <h2 class="display-4 text-center mb-4">Learn</h2>
+    <h2 class="display-4 text-center mb-4 fw-bold">Learn</h2>
     <div class="row">
-      <div class="col-md-6 mb-4" *ngFor="let topic of learningTopics">
-        <app-learn-card [topic]="topic"></app-learn-card>
-      </div>
+      @for(topic of learningTopics; track topic.title){
+      <app-learn-card [topic]="topic"></app-learn-card>
+      }
     </div>
   </div>
 </section>

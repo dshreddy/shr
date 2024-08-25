@@ -13,15 +13,19 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   projects = [
     {
+      image: 'assets/projects/arc.png',
       title: 'ARC - Automated Roll Call',
       description: 'An automated attendance system designed for efficiency and accuracy.',
-      githubLink: 'https://github.com/your-github/arc-project',
-      demoLink: 'https://demo-link.com/arc-project'
+      githubLink: 'https://github.com/dshreddy/ARC',
+      demoExists: false,
+      demoLink: 'https://demo-link.com/arc-project',
     },
     {
+      image: 'assets/projects/compiler.png',
       title: 'C-like Language Compiler',
       description: 'A custom compiler for a simplified C-like language, built for learning and exploration.',
-      githubLink: 'https://github.com/your-github/compiler-project',
+      githubLink: 'https://github.com/dshreddy/compiler',
+      demoExists: false,
       demoLink: 'https://demo-link.com/compiler-project'
     }
   ];

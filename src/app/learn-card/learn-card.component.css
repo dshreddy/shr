@@ -1,12 +1,19 @@
-.modal {
-  display: block;
-  background: rgba(0, 0, 0, 0.5);
+.card {
+  border-radius: 30px;
+  padding-bottom: 30px;
 }
 
-.modal-dialog {
-  margin-top: 10%;
+.card-title {
+  padding: 10px 20px 0 20px;
 }
 
-.modal-backdrop {
-  display: none;
+img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px 30px 0 0;
+}
+
+.card-text {
+  padding: 10px 20px 20px 20px;
 }

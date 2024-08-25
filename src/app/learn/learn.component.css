@@ -9,3 +9,12 @@
 .learn .btn-secondary {
   margin-top: 1rem; /* Add margin-top to the button */
 }
+
+.row {
+  display: grid;
+  column-gap: 14px;
+  row-gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+  margin-top: 50px;
+  justify-content: space-around;
+}
