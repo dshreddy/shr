@@ -23,7 +23,7 @@ export class LearnComponent {
       title: 'Software Engineering Principles',
       description: 'Learning Object Oriented Design, GUI prohramming.',
       disabled: false,
-      link: 'https://github.com/dshreddy/shr/tree/main/src/assets/learnSE-Notes/Software-Engineering.md'
+      link: 'https://github.com/dshreddy/shr/blob/main/src/assets/learn/SE-Notes/Software-Engineering.md'
     },
     {
       image: 'assets/learn/computer-networks.png',
