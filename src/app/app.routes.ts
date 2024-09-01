@@ -8,14 +8,8 @@ import { LearnComponent } from './learn/learn.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    component: HomeComponent
   },
-  { 
-    path: 'home', 
-    component: HomeComponent,
-    pathMatch: 'full'
-  },  
   { 
     path: 'about', 
     component: AboutComponent 
@@ -31,6 +25,5 @@ export const routes: Routes = [
   {
     path: 'learn',
     component: LearnComponent,
-    pathMatch: 'full'
   }
 ];
