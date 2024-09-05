@@ -81,39 +81,3 @@ If you'd like to contribute to this project, please follow these steps:
 5. Open a Pull Request.
 
 Please ensure your code adheres to the project's style and includes appropriate tests.
-
-## Hosting
-
-The Issue: Assets Not Loading Properly
-When you run ng build, Angular generates a production-ready build of your application. However, when hosting your app on GitHub Pages, the assets (such as images, stylesheets, and scripts) might not be loaded properly. This is because GitHub Pages serves your app from a different base URL than what Angular expects.
-
-# Understanding the Problem
-
-1. Use the --base-href flag with ng build
-
-```shell
-ng build --prod --base-href=/\<repository-name>/
-```
-
-2. Update index.html to use relative URLs
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your App</title>
-    <base href="./" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <app-root></app-root>
-    <script src="runtime.js"></script>
-    <script src="polyfills.js"></script>
-    <script src="main.js"></script>
-  </body>
-</html>
-```
-
-By setting the base tag to ./, you're telling the browser to load assets relative to the current directory.
